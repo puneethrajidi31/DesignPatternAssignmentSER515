@@ -24,12 +24,22 @@ public class main {
 		    if(x==0)
 		    {
 		    	MeatProductMenu meatproduct=new MeatProductMenu();
+		    	System.out.println("Utilizing the Factory Design pattern");
+		    	System.out.println("");
 		    	meatproduct.showMenu();
+		    	System.out.println("");
+		    	System.out.println("Utilized the Bridge Design pattern");
+		    	
 		    }
 		    else if(x==1)
 		    {
 		    	ProduceProductMenu producemenu=new ProduceProductMenu();
+		    	System.out.println("Utilizing the Factory Design pattern");
+		    	System.out.println("");
 		    	producemenu.showMenu();
+		    	System.out.println("");
+		    	System.out.println("Utilized the Bridge Design pattern");
+		    	
 		    }
 		    else
 		    {
@@ -40,6 +50,11 @@ public class main {
 		    System.out.println("");
 		    ProductIterator productiterator=new ProductIterator();
 		    productiterator.hasNext();
+		    System.out.println("");
+		    System.out.println("What dish do you like to order?");
+		    String dish=scan.next();
+		    Trading trading = new Trading();
+		    trading.bidvalue(dish);
 		}
 }
 }

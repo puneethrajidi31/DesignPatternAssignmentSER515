@@ -35,6 +35,8 @@ public class Facade {
 			String username=scan.next();
 			System.out.println("Please enter your password");
 			String password=scan.next();
+			System.out.println("Implemeting the Facade Design pattern");
+			System.out.println("");
 			if(x==0)
 			{
 			File file=new File("BuyerInfo");
