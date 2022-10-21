@@ -10,32 +10,36 @@ public class main {
 		boolean auth=facade.login();
 		if(auth==true)
 		{
-		System.out.println("Menu Options: Please enter 0 for Meat Option and Please enter 1 for Produce Option");
-		int x=-1;
-		Scanner scan=new Scanner(System.in);
-		try
-		{
-		int in=scan.nextInt();
-		x=in;
-		} catch(Exception e)
-		{
-			System.out.println("Wrong Input type");
-		}
-	    if(x==0)
-	    {
-	    	MeatProductMenu meatproduct=new MeatProductMenu();
-	    	meatproduct.showMenu();
-	    }
-	    else if(x==1)
-	    {
-	    	ProduceProductMenu producemenu=new ProduceProductMenu();
-	    	producemenu.showMenu();
-	    }
-	    else
-	    {
-	    	System.out.println("Incorrect Input");
-	    }
-		
+			System.out.println("Menu Options: Please enter 0 for Meat Option and Please enter 1 for Produce Option");
+			int x=-1;
+			Scanner scan=new Scanner(System.in);
+			try
+			{
+			int in=scan.nextInt();
+			x=in;
+			} catch(Exception e)
+			{
+				System.out.println("Wrong Input type");
+			}
+		    if(x==0)
+		    {
+		    	MeatProductMenu meatproduct=new MeatProductMenu();
+		    	meatproduct.showMenu();
+		    }
+		    else if(x==1)
+		    {
+		    	ProduceProductMenu producemenu=new ProduceProductMenu();
+		    	producemenu.showMenu();
+		    }
+		    else
+		    {
+		    	System.out.println("Incorrect Input");
+		    }
+		    System.out.println("");
+		    System.out.println("Printing the Output of Iterator design pattern");
+		    System.out.println("");
+		    ProductIterator productiterator=new ProductIterator();
+		    productiterator.hasNext();
 		}
 }
 }
